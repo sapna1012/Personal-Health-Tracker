@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="User Manager">
+        <lightning-record-edit-form object-api-name="User__c" onsuccess={handleSuccess}>
+            <lightning-messages></lightning-messages>
+
+            <lightning-input-field field-name="Full_Name__c"></lightning-input-field>
+            <lightning-input-field field-name="Age__c"></lightning-input-field>
+            <lightning-input-field field-name="Contact_Number__c"></lightning-input-field>
+            <lightning-input-field field-name="Email_Address__c"></lightning-input-field>
+            <lightning-input-field field-name="Medical_History__c"></lightning-input-field>
+            <lightning-input-field field-name="Health_Issues__c"></lightning-input-field>
+            <lightning-input-field field-name="Consultation_Time__c"></lightning-input-field>
+
+            <lightning-button type="submit" label="Save"></lightning-button>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>
